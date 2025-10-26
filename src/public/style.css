@@ -8,7 +8,7 @@ body {
 
 .user-form {
     width: 40%;
-    height: 25vh;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
     align-items: center;
@@ -45,4 +45,10 @@ body {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 4px;
 }

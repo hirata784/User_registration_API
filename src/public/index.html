@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -9,22 +9,27 @@
 </head>
 
 <body>
-    <form class="user-form">
+    <form id="js-form" class="user-form">
         <p class="title">新規登録</p>
         <div class="group">
             <input type="text" id="js-name" class="txt" placeholder="名前">
+            <div class="error" id="error-name"></div>
+        </div>
+        <div class="form__error">
         </div>
         <div class="group">
-            <input type="text" id="js-email" class="txt" placeholder="メールアドレス">
+            <input type="text" id="js-email" name="name" class="txt" placeholder="メールアドレス">
+            <div class="error" id="error-email"></div>
         </div>
         <div class="group">
             <input type="text" id="js-password" class="txt" placeholder="パスワード">
+            <div class="error" id="error-password"></div>
         </div>
         <div class="group">
             <button id="js-add" class="add-btn">登録</button>
         </div>
     </form>
-    <script id="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
